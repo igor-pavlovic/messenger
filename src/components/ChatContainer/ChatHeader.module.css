@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0.4em 1em;
+  font-size: 1.25em;
+  color: var(--text-color-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.avatar {
+  display: block;
+  width: 2em;
+  height: 2em;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.name {
+  font-weight: bold;
+  margin-left: 0.5em;
+}

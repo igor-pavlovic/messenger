@@ -1,0 +1,15 @@
+.messenger {
+  display: flex;
+  flex-grow: 1;
+  height: 100vh;
+
+  --bg-color-primary: white;
+  --bg-color-secondary: lightgray;
+  --bg-color-chat-friend: lightgray;
+  --bg-color-chat-user: #0077b6;
+  --bg-color-input: #0077b610;
+  --text-color-primary: #000000AA;
+  --text-color-chat-user: white;
+  --text-color-chat-friend: var(--text-color-primary);
+  --border-color: lightgray;
+}

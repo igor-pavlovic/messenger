@@ -1,0 +1,66 @@
+.friend {
+  display: flex;
+  align-items: center;
+  padding: 0.4em 0.4em;
+  border-radius: 1.5em 0.4em 0.4em 1.5em;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--bg-color-secondary);
+  }
+
+  &.isSelected {
+    background-color: var(--bg-color-secondary);
+  }
+}
+
+.friend + .friend {
+  margin-top: 0.25em;
+}
+
+.avatar {
+  display: block;
+  width: 2em;
+  height: 2em;
+  border-radius: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.avatar + .name {
+  margin-left: 0.4em;
+}
+
+.name {
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.friends {
+  width: 20%;
+  max-width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow-y: auto;
+  color: var(--text-color-primary);
+  border-right: 1px solid var(--border-color);
+  --padding: 1em 0.5em;
+}
+
+.friendsTitle {
+  padding: 0.65em 1em;
+  font-weight: bold;
+  font-size: 1.25em;
+  border-bottom: 1px solid var(--border-color);
+  margin: 0;
+}
+
+.friendsList {
+  padding: 1em 0.4em;
+  margin: 0;
+  overflow: auto;
+}
+

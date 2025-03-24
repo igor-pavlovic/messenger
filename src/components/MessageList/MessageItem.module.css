@@ -1,0 +1,25 @@
+.message {
+  padding: 0.6em;
+  border-radius: 0.4em;
+  margin-bottom: 0.6em;
+  max-width: 60%;
+  flex-grow: 0;
+
+  &.isUser {
+    align-self: flex-end;
+    color: var(--text-color-chat-user);
+    background-color: var(--bg-color-chat-user);
+  }
+
+  &.isFriend {
+    align-self: flex-start;
+    color: var(--text-color-chat-friend);
+    background-color: var(--bg-color-chat-friend);
+  }
+}
+
+.timestamp {
+  font-size: 0.6em;
+  margin-top: 0.25em;
+}
+
